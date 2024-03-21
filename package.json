@@ -1,0 +1,24 @@
+{
+  "name": "@drmercer/ical-scan",
+  "version": "0.0.1",
+  "author": "Dan Mercer",
+  "description": "Streams an ical file and finds events in a certain range",
+  "license": "MIT",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "deno test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drmercer/ical-scan.git"
+  },
+  "keywords": [
+    "ical",
+    "calendar"
+  ],
+  "bugs": {
+    "url": "https://github.com/drmercer/ical-scan/issues"
+  },
+  "homepage": "https://github.com/drmercer/ical-scan#readme"
+}
