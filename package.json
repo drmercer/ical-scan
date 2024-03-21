@@ -1,6 +1,6 @@
 {
   "name": "@drmercer/ical-scan",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Dan Mercer",
   "description": "Streams an ical file and finds events in a certain range",
   "license": "MIT",
