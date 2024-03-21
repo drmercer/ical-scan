@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true
+  },
+  "include": ["src/**/*.js"],
+  "exclude": ["src/**/*.test.js"]
+}

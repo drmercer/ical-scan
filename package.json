@@ -1,13 +1,18 @@
 {
   "name": "@drmercer/ical-scan",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Dan Mercer",
   "description": "Streams an ical file and finds events in a certain range",
   "license": "MIT",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "deno test"
+    "test": "deno test",
+    "types:generate": "tsc",
+    "npm:publish": "tsc && npm publish --access public"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.3"
   },
   "repository": {
     "type": "git",
