@@ -1,2 +1,3 @@
 // @ts-ignore No types for ical.js package :(
-export * as ICAL from 'ical.js';
+import ICAL from 'ical.js';
+export { ICAL };
