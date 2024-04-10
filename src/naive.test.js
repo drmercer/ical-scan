@@ -1,5 +1,5 @@
 import { getEvents } from './naive.js';
-import { Test1, Test2, Test3, Test4, Test5, Test6 } from './testing/icals/google.js';
+import { Test1, Test2, Test3, Test4, Test5, Test6, Test7 } from './testing/icals/google.js';
 import { assertEquals } from "https://deno.land/std@0.220.0/assert/mod.ts";
 
 Deno.test('should work for a non-recurring event', () => {
@@ -219,5 +219,17 @@ Deno.test('should work with events moved earlier into the range', () => {
 });
 
 Deno.test('should work with events moved later into the range', () => {
-  // TODO
+  const start = new Date('2024-04-11T00:00:00.000-06:00'); // 4/11/2024, 12:00:00 AM MDT
+  const end = new Date('2024-04-12T00:00:00.000-06:00'); // 4/12/2024, 12:00:00 AM MDT
+
+  const events = getEvents(Test7, start, end);
+
+  assertEquals(events, [
+    {
+      uid: '038drku84heh8k11r8ssuobqkt%40google.com/1712476800',
+      summary: 'Every Sunday (but moved to Thursday)',
+      start: new Date('2024-04-11T08:00:00.000-06:00'),
+      end: new Date('2024-04-11T09:00:00.000-06:00'),
+    },
+  ]);
 });
