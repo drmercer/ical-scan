@@ -9,7 +9,8 @@
   "scripts": {
     "test": "deno test",
     "types:generate": "git clean -dfX src/ && tsc",
-    "npm:publish": "deno task types:generate && npm publish --access public"
+    "npm:publish": "deno task types:generate && npm publish --access public",
+    "examples:fromurl": "deno run --allow-net src/examples/fromurl.js"
   },
   "dependencies": {
     "ical.js": "^1.5.0"
