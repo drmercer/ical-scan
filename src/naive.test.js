@@ -1,6 +1,6 @@
 import { getEvents } from './naive.js';
 import { Test1, Test2, Test3, Test4, Test5, Test6, Test7 } from './testing/icals/google.js';
-import { assertEquals } from "https://deno.land/std@0.220.0/assert/mod.ts";
+import { assertEquals } from "./deps/assert.js";
 
 Deno.test('should work for a non-recurring event', () => {
   const start = new Date('2023-04-28T00:00:00.000-06:00'); // 4/28/2023, 12:00:00 AM MDT
