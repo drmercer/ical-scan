@@ -7,7 +7,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "deno test",
+    "test": "TZ=UTC deno test",
     "types:generate": "git clean -dfX src/ && tsc",
     "npm:publish": "deno task types:generate && npm publish --access public",
     "examples:fromurl": "deno run --allow-net src/examples/fromurl.js"
